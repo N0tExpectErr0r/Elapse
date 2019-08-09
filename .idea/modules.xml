@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Elapse.iml" filepath="$PROJECT_DIR$/Elapse.iml" />
+      <module fileurl="file://$PROJECT_DIR$/elapse/elapse.iml" filepath="$PROJECT_DIR$/elapse/elapse.iml" />
+      <module fileurl="file://$PROJECT_DIR$/elapse-asm/elapse-asm.iml" filepath="$PROJECT_DIR$/elapse-asm/elapse-asm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/elapse-demo/elapse-demo.iml" filepath="$PROJECT_DIR$/elapse-demo/elapse-demo.iml" />
+    </modules>
+  </component>
+</project>

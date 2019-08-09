@@ -1,0 +1,24 @@
+apply plugin: 'groovy'
+apply plugin: 'maven'
+
+dependencies {
+    implementation gradleApi()
+    implementation localGroovy()
+
+    implementation 'com.android.tools.build:gradle:3.4.1'
+}
+
+repositories {
+    mavenCentral()
+    jcenter()
+    google()
+}
+
+uploadArchives {
+    repositories.mavenDeployer {
+        repository(url: uri('../repo'))
+        pom.groupId = 'com.n0texpecterr0r.build'
+        pom.artifactId = 'elapse-asm'
+        pom.version = '1.0.0'
+    }
+}
