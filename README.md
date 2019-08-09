@@ -10,7 +10,7 @@
 
 在项目的 build.gradle 中将其添加到 classpath 中：
 
-```
+```groovy
 repositories {
     //...
     maven {
@@ -26,7 +26,7 @@ dependencies {
 
 在 App module 中将插件 apply：
 
-```
+```groovy
 apply plugin: 'com.n0texpecterr0r.elapse-asm'
 ```
 
@@ -34,7 +34,7 @@ apply plugin: 'com.n0texpecterr0r.elapse-asm'
 
 在需要进行插桩的方法上加入注解：
 
-```
+```java
 @TrackMethod(tag = TAG_LOG)
 public void test() {
     try {
@@ -47,7 +47,7 @@ public void test() {
 
 在 Application 中注册 `MethodObserver`，并实现对应方法：
 
-```
+```java
 MethodEventManager.getInstance()
         .registerMethodObserver(TAG_LOG, new MethodObserver() {
             @Override
